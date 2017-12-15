@@ -13,7 +13,7 @@ for i in range(3):
     password_element.send_keys("qwerty123$")
     password_element.submit()
     time.sleep(2)
-    browser.get("https://github.com/kartik898/wow")
+    browser.get("<repo-to-be-starred>")
     script = "var button=document.getElementsByTagName('Button')[3].click()"
     browser.execute_script(script)
     script = "var button=document.getElementsByClassName('dropdown-signout')[1].click()"
