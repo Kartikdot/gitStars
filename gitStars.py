@@ -5,7 +5,8 @@ browser = webdriver.Firefox()
 browser.get("https://www.github.com")
 string = "loremIpsum91"
 i = 1
-for i in range(3):
+num = input("Enter the number of stars you'd like: ")
+for i in range(num):
     browser.find_element_by_id("user[login]").send_keys(string + str(i))
     browser.find_element_by_id("user[email]").send_keys(
         string + str(i) + "@gmail.com")
